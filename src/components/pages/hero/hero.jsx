@@ -1,5 +1,6 @@
 import styles from './hero.module.css'
 import Header from '@/components/organisms/header/header'
+import Link_arrow from '@/components/atoms/link_arrow/link_arrow'
 
 const Hero = () => {
     return (
@@ -29,9 +30,9 @@ const Hero = () => {
                         </span>
                     </h1>
                     <p className={styles.hero_text}>Классические стрижки, борода, бритьё опасной бритвой.</p>
-                        
-                </div>
 
+                </div>
+                <Link_arrow />
             </div>
         </section>
     )
