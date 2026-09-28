@@ -1,0 +1,56 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    background-color: var(--back);
+    z-index: 10;
+}
+
+
+
+.logo_text {
+    font-size: 20px;
+    font-family: var(--font-dela);
+    text-wrap: wrap;
+    color: aliceblue;
+    line-height: 0.95;    
+}
+
+.navbar_booking_div{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+@media(max-width:768px) {
+    .header {
+        max-width: 600px;
+        padding: 7px;
+        justify-content: space-between;
+    }
+
+
+    .logo {
+        max-width: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+
+    }
+      .navbar_booking_div {
+        display: none;
+    }
+    .nav{
+        flex-direction: column;
+    }
+  
+}

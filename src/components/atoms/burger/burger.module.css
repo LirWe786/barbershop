@@ -1,0 +1,14 @@
+.burger {
+    display: none;
+
+}
+
+
+@media (max-width:768px) {
+    .burger {
+        display: block;
+        background: none;
+        border: none;
+        padding: 5px;
+    }
+}

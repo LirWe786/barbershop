@@ -1,0 +1,16 @@
+.booking_btn {
+    height: 32px;
+    width: 160px;
+    background-color: var(--text-pr);
+    color: var(--back);
+    border: none;
+    font-family:var(--font-golos) ;
+    font-weight: 500;
+
+}
+/* 
+@media(max-width:768px) {
+    .booking_btn {
+        display: none;
+    }
+} */

@@ -1,0 +1,16 @@
+.navVertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 14%;
+    gap: 7px;
+}
+
+.navHorizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 14%;
+    gap: 1.2rem;
+}
