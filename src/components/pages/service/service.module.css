@@ -1,0 +1,30 @@
+.services {
+    width: 95%;
+    height: 100vh;
+    background-color: var(--back);
+    scroll-margin-top: 70px;
+}
+
+.header {
+    margin-left: 2rem;
+    color: var(--text-pr);
+    font-family: var(--font-dela);
+}
+
+
+@media (min-width:375px) {
+
+
+    .services {
+        margin-top: 20px;
+        width: 95%;
+        height: 100vh;
+        background-color: var(--back);
+        scroll-margin-top: 70px;
+    }
+
+    .header {
+        margin-left: 2rem;
+        font-size: 20px;
+    }
+}

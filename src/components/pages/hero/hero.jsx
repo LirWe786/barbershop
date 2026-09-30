@@ -4,8 +4,10 @@ import Link_arrow from '@/components/atoms/link_arrow/link_arrow'
 
 const Hero = () => {
     return (
-        <section>
-            <Header></Header>
+        <section
+            id='hero'
+            className={styles.hero}>
+            {/* <Header></Header> */}
             <div className={styles.hero_main} >
                 <picture >
                     <source media="(max-width: 767px)" srcSet="/mobile_hero.jpg" />
@@ -19,15 +21,9 @@ const Hero = () => {
                 </picture>
                 <div className={styles.overlay}></div>
                 <div className={styles.text_container}>
-                    {/* <h1 className={styles.name}>
-                        AYGAM
-                        <br></br>
-                        <span>BARBERSHOP</span>
-                    </h1> */}\
+                   
                     <h1 className={styles.title}>
-                        {/* AYGAM BARBERSHOP — <br></br> */}
-                        <span>Твой характер в каждой детали.
-                        </span>
+                      Твой характер в каждой детали. 
                     </h1>
                     <p className={styles.hero_text}>Классические стрижки, борода, бритьё опасной бритвой.</p>
 

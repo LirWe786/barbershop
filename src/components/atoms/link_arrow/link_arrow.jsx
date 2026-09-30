@@ -9,7 +9,7 @@ const Link_arrow = () => {
         href={'#services'}
         className={styles.link_arrow}>
            
-            <ArrowDown size={30}></ArrowDown>
+            <ArrowDown color='white' size={30}></ArrowDown>
         </Link>
     )
 }
