@@ -1,4 +1,5 @@
 import styles from './service.module.css'
+import Services_card from '@/components/molecules/services_card/services_card';
 
 const Service = () => {
 
@@ -10,9 +11,9 @@ const Service = () => {
             <div className={styles.service_header_div}>
                 <h1 className={styles.header}>Услуги</h1>
             </div>
-            <div className={styles.cards_container}>
+            <ul className={styles.cards_container}>
 
-            </div>
+            </ul>
         </section>
     )
 }
