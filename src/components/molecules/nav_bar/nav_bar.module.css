@@ -11,6 +11,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 14%;
+    width: 400px;
     gap: 1.2rem;
 }

@@ -1,18 +1,18 @@
 import styles from './services_card.module.css';
 import Booking_btn from '@/components/atoms/booking_btn/booking_btn';
 
-const Services_card = ({})=>{
+const Services_card = ({ name, price, time, highlighted }) => {
 
 
-    return(
-        <li className={styles.service_card}>
-            <div>
-                <h2>Title</h2>
-                <span>1700</span>
+    return (
+        <li className={styles.services_card} >
+            <h2 className={styles.name}>{name}</h2>
+            <div className={styles.card_main}>
+                <p className={styles.time} >{time}<span className={styles.price}> {price}</span></p>
+                {/* <span className={styles.price}>{price}</span> */}
+
+                <Booking_btn />
             </div>
-            <p>description</p>
-            
-            <Booking_btn/>
         </li>
     )
 }
