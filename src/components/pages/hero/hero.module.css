@@ -35,7 +35,7 @@
     /* background-image: url('/hero.jpg'); */
     background-repeat: no-repeat;
     object-fit: cover;
-     pointer-events: none;
+    pointer-events: none;
 }
 
 .text_container {
@@ -48,7 +48,7 @@
     justify-content: center;
     z-index: 2;
     padding: 5px;
-     pointer-events: none;
+    pointer-events: none;
 }
 
 .title {
@@ -59,7 +59,7 @@
 }
 
 .hero_text {
-    
+
     position: relative;
     font-family: var(--font-golos);
     color: var(--text-pr);
@@ -80,7 +80,7 @@
     }
 
     .hero_img {
-           margin-top: 70px;
+        margin-top: 70px;
         top: 0;
         left: 0;
         object-fit: cover;

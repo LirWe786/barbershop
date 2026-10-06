@@ -1,0 +1,85 @@
+.masters_card {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 3 / 4;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--back);
+}
+
+/* 
+.img_container {
+    width: 100%;
+    height: 90%;
+} */
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    filter: grayscale(100%);
+}
+
+.text_container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.name {
+    color: var(--text-pr);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+    /* Делает имя строгим и брутальным */
+    letter-spacing: 0.5px;
+    font-family: var(--font-dela);
+}
+
+.post {
+    color: var(--text-scnd);
+    /* Приглушенный серый для иерархии */
+    font-size: 14px;
+    margin: 0;
+}
+
+@media(max-width:450px) {
+    .masters_card {
+        max-width: 380px;
+    }
+
+
+}
+
+@media(max-width:400px) {
+    .masters_card {
+        max-width: 350px;
+    }
+}
+
+@media(min-width:2000px) {
+    .masters_card {
+        min-width: 600px;
+        min-height: 720px;
+    }
+
+    .name {
+        font-size: 34px;
+    }
+
+    .post {
+        font-size: 20px;
+    }
+}

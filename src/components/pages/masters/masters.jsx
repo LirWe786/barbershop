@@ -1,5 +1,6 @@
 import styles from './master.module.css'
-
+import { masters } from '@/data/masters';
+import Masters_card from '@/components/molecules/masters_card/masters_card';
 
 const Masters = () => {
 
@@ -14,7 +15,7 @@ const Masters = () => {
                 <div className={styles.margin}></div>
             </div>
             <ul className={styles.cards_container}>
-                {/* {services.map((i, index) => <Services_card key={index} name={i.name} time={i.time} price={i.price} highlighted={i.highlighted} />)} */}
+                {masters.map((i, index) => <Masters_card key={index} name={i.name} img={i.img} post={i.post} />)}
             </ul>
 
         </section>
