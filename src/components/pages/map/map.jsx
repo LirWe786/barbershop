@@ -9,12 +9,13 @@ const YandexMap = dynamic(() => import('@/components/organisms/yMap/yMap.jsx'), 
 });
 
 export default function MapPage() {
+ 
     return (
         <section
             id='map'
             className={styles.map_section}
         >
-            <Header_h  title='Карта'/>
+            <Header_h title='Карта' />
             <div style={{ marginTop: '20px', borderRadius: '8px', overflow: 'hidden' }}>
                 <YandexMap />
             </div>
