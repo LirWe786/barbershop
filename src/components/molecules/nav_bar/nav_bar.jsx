@@ -5,13 +5,13 @@ import { links } from "@/data/links"
 
 
 
-const Nav_Bar = ({ variant }) => {
+const Nav_Bar = ({ variant , setIsOpenBurger}) => {
 
     const cls = variant === 'vertical' ? styles.navVertical : styles.navHorizontal
     console.log(variant)
     return (
         <nav className={cls} >
-            {links.map((i, index) => <Nav_link key={index} name={i.name} href={i.href} />)}
+            {links.map((i, index) => <Nav_link key={index} name={i.name} href={i.href}  setIsOpenBurger={setIsOpenBurger} />)}
         </nav>
     )
 

@@ -25,7 +25,7 @@ const Header = () => {
                 <Booking_btn />
             </div>
             <Burger setIsOpen={setIsOpenBurger} isOpen={isOpenBurger}></Burger>
-            {isOpenBurger ? <Burger_menu /> : '' }
+            {isOpenBurger ? <Burger_menu setIsOpenBurger={setIsOpenBurger} /> : '' }
 
         </header>
     )
