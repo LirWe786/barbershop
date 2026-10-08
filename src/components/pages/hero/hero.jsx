@@ -8,7 +8,6 @@ const Hero = () => {
         <section
             id='hero'
             className={styles.hero}>
-            {/* <Header></Header> */}
             <div className={styles.hero_main} >
                 <picture >
                     <source media="(max-width: 767px)" srcSet="/mobile_hero.jpg" />

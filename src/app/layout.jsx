@@ -19,8 +19,9 @@ const golos = Golos_Text({
 })
 
 export const metadata = {
-  title: "Aygam Barbershop",
-  description: "Aygam Barbershop - больше чем просто стрижка",
+  title: "Айгам Барбершоп в Пятигорске | Мужские стрижки и бритьё",
+  description: "Премиальный мужской барбершоп AYGAM. Профессиональные стрижки, оформление бороды, бритье опасной бритвой. Запишитесь онлайн у Нас на сайте",
+  keywords: ['барбершоп пятигорск', 'мужская стрижка пятигорск', 'бритье бороды', 'AYGAM barbershop', 'записаться к барберу пятигорск', ''],
 };
 
 export default function RootLayout({ children }) {

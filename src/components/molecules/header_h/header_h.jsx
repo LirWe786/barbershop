@@ -5,7 +5,7 @@ const Header_h = ({title}) => {
 
     return (
         <div className={styles.service_header_div}>
-            <h1 className={styles.header}>{title}</h1>
+            <h2 className={styles.header}>{title}</h2>
             <div className={styles.margin}></div>
         </div>
     );
