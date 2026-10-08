@@ -1,22 +1,33 @@
 'use client';
 import styles from './yMap.module.css'
 import { useEffect, useRef } from 'react';
+import Script from 'next/script';
 
 export default function YandexMap() {
-    const mapContainerRef = useRef(null);
+
+
+
 
     useEffect(() => {
-        
+
+
+        <Script
+            src={`https://api-maps.yandex.ru/v3/?apikey=${process.env.NEXT_PUBLIC_YANDEX_MAP_API_KEY}&lang=ru_RU`}
+            strategy="afterInteractive"
+            onLoad={initMap}
+        />
+        const mapContainerRef = useRef(null);
+
         if (typeof window === 'undefined' || !window.ymaps3) return;
 
         const ymaps3 = window.ymaps3;
 
         async function initMap() {
             try {
-         
+
                 await ymaps3.ready;
                 const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } = ymaps3;
-        
+
                 const { YMapMarker } = ymaps3;
 
 
