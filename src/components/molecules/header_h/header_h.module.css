@@ -1,0 +1,18 @@
+.service_header_div {
+    /* padding: 20px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+.margin{
+    width: 80%;
+}
+
+.header {
+    /* margin-top: 8rem;
+    margin-left: 5rem; */
+    color: var(--text-pr);
+    font-family: var(--font-dela);
+}

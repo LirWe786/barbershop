@@ -1,0 +1,13 @@
+.map{
+    width: 800px;
+    height: 700px;
+
+}
+
+
+@media(min-width:2000px){
+    .map{
+        width: 1500px;
+        height: 900px;
+    }
+}

@@ -1,6 +1,7 @@
 import styles from './hero.module.css'
-import Header from '@/components/organisms/header/header'
 import Link_arrow from '@/components/atoms/link_arrow/link_arrow'
+
+
 
 const Hero = () => {
     return (
