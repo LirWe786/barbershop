@@ -1,79 +1,94 @@
 .services {
     position: relative;
     z-index: 1;
-    width: 100vw;
+    width: 100%;
+    max-width: 100vw;
     min-height: 100vh;
     background-color: var(--back);
     scroll-margin-top: 70px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    padding-top:3rem ;
-
+    padding: 0 1.25rem 5rem;
+    overflow-x: hidden;
 }
 
-.service_header_div {
-    /* padding: 20px; */
+.services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: min(720px, 100%);
+    height: 280px;
+    background: radial-gradient(
+        ellipse 80% 60% at 50% 0%,
+        rgba(250, 250, 250, 0.04) 0%,
+        transparent 70%
+    );
+    pointer-events: none;
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
     width: 100%;
+    max-width: 720px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.margin{
-    width: 80%;
+    flex-direction: column;
+    align-items: stretch;
 }
 
-.header {
-    /* margin-top: 8rem;
-    margin-left: 5rem; */
-    color: var(--text-pr);
-    font-family: var(--font-dela);
+.lead {
+    margin: -1.5rem 0 2rem;
+    text-align: center;
+    color: var(--text-scnd);
+    font-family: var(--font-golos), Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    letter-spacing: 0.01em;
 }
 
 .cards_container {
-
-    min-height: 50vh;
-    /* margin-top: 2rem; */
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    background: var(--back)
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-
-@media (max-width:450px) {
-
-    .service_header_div {
-        padding:0;
-
-    }
-
-
+@media (max-width: 450px) {
     .services {
-
-        min-height: 100vh;
-        scroll-margin-top: 70px;
-
+        padding: 0 1rem 4rem;
+        min-height: auto;
     }
 
-    .header {
-        font-size: 20px;
-        margin-left: 7px;
+    .lead {
+       margin-top: 0.5rem;
+       margin-bottom: 1.75rem;
+        font-size: 15px;
+        padding: 0 0.25rem;
     }
 
     .cards_container {
-        gap: 1.2rem;
-        min-height: 1000px;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
+        gap: 8px;
+    }
+}
 
+@media (min-width: 2000px) {
+    .content {
+        max-width: 900px;
     }
 
+    .lead {
+        font-size: 18px;
+        margin-bottom: 2.5rem;
+    }
+
+    .cards_container {
+        gap: 14px;
+    }
 }
