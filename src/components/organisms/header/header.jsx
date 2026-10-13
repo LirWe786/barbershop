@@ -16,7 +16,7 @@ const Header = () => {
         <header className={styles.header}>
             <div className={styles.logo}>
                 <h1 className={styles.logo_text}>
-                    AYGAM <br></br>
+                    АЙГАМ <br></br>
                     <span> BARBERSHOP</span>
                 </h1>
             </div>
