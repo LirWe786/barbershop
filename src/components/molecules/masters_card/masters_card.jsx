@@ -1,6 +1,6 @@
 import styles from './masters_card.module.css';
 
-const Masters_card = ({ name, img, post }) => {
+const Masters_card = ({ name, img, post, alt}) => {
 
 
     return (
@@ -8,7 +8,7 @@ const Masters_card = ({ name, img, post }) => {
        
             <img
                 src={img}
-                alt="Фото мастера"
+                alt={alt}
                 className={styles.img}
             />
             <div className={styles.text_container}>

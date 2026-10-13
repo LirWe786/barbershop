@@ -14,7 +14,7 @@ const Hero = () => {
                     <source media="(min-width: 768px)" srcSet="/hero.jpg" />
                     <img
                         src="/images/hero-desktop.jpg"
-                        alt="Интерьер барбершопа AYGAM: кресло FEDORA и полка с инструментами"
+                        alt="Интерьер барбершопа Айгам в Пятигорске"
                         className={styles.hero_img}
                     />
 
