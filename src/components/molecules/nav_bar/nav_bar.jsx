@@ -7,8 +7,10 @@ import { links } from "@/data/links"
 
 const Nav_Bar = ({ variant , setIsOpenBurger}) => {
 
+
+
     const cls = variant === 'vertical' ? styles.navVertical : styles.navHorizontal
-    console.log(variant)
+    console.log(setIsOpenBurger, 'set is open buger')
     return (
         <nav className={cls} >
             {links.map((i, index) => <Nav_link key={index} name={i.name} href={i.href}  setIsOpenBurger={setIsOpenBurger} />)}

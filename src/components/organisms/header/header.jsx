@@ -21,7 +21,7 @@ const Header = () => {
                 </h1>
             </div>
             <div className={styles.navbar_booking_div}>
-                <Nav_Bar variant={'horizontal'} />
+                <Nav_Bar variant={'horizontal'} setIsOpenBurger={setIsOpenBurger} />
                 <Booking_btn />
             </div>
             <Burger setIsOpen={setIsOpenBurger} isOpen={isOpenBurger}></Burger>
