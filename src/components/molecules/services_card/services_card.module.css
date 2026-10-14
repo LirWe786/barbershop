@@ -97,6 +97,21 @@
         justify-content: center;
     }
 }
+@media (max-width: 380px) {
+ 
+
+    .services_card{
+         width: 92vw;
+         padding: 0.8rem 1rem;
+    }
+
+    .name {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+}
+
 
 @media (min-width: 2000px) {
     .services_card {

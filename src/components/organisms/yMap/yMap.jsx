@@ -5,7 +5,6 @@ import { useEffect, useRef } from 'react';
 
 export default function YandexMap() {
 
-    console.log(process.env.NEXT_PUBLIC_YANDEX_MAP_API_KEY)
     const mapContainerRef = useRef(null);
 
     useEffect(() => {

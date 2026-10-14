@@ -62,6 +62,7 @@
 
 @media (max-width: 450px) {
     .services {
+        width: 100vw;
         padding: 0 1rem 4rem;
         min-height: auto;
     }
