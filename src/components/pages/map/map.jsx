@@ -9,13 +9,15 @@ const YandexMap = dynamic(() => import('@/components/organisms/yMap/yMap.jsx'), 
 });
 
 export default function MapPage() {
- 
+
     return (
         <section
             id='map'
             className={styles.map_section}
         >
             <Header_h title='Карта' />
+
+            <h3 className={styles.lead}>г. Пятигорск, проспект 40 лет Октября, 58А (1-й этаж, ТЦ «Евросити»)</h3>
             <div style={{ marginTop: '20px', borderRadius: '8px', overflow: 'hidden' }}>
                 <YandexMap />
             </div>

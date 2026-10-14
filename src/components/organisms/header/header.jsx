@@ -16,12 +16,12 @@ const Header = () => {
         <header className={styles.header}>
             <div className={styles.logo}>
                 <h1 className={styles.logo_text}>
-                    AYGAM <br></br>
+                    АЙГАМ <br></br>
                     <span> BARBERSHOP</span>
                 </h1>
             </div>
             <div className={styles.navbar_booking_div}>
-                <Nav_Bar variant={'horizontal'} />
+                <Nav_Bar variant={'horizontal'} setIsOpenBurger={setIsOpenBurger} />
                 <Booking_btn />
             </div>
             <Burger setIsOpen={setIsOpenBurger} isOpen={isOpenBurger}></Burger>
