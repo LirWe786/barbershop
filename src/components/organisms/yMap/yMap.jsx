@@ -62,9 +62,10 @@ export default function YandexMap() {
                     { coordinates: coordinates },
                     markerElement
                 );
-
+              
                 // Чтобы активировать кастомный маркер, раскомментируйте строчку ниже (и закомментируйте Вариант 1):
                 map.addChild(customMarker);
+              
             } catch (err) {
                 console.log(new Error(err))
             }
