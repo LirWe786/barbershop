@@ -24,7 +24,14 @@ export const metadata = {
   keywords: ['барбершоп пятигорск', 'мужская стрижка пятигорск', 'бритье бороды пятигорск', 'aygam barbershop pyatigorsk', 'записаться к барберу пятигорск', 'айгам барбершоп пятигорск'],
   verification: {
     google: 'odSRNUu858bpRY25kENctCFEbSlFp_RLX_oGvYDc-7A'
-  }
+  },
+  openGraph: {
+    siteName: 'Айгам Барбершоп', // <-- Сюда пиши точное имя, которое хочешь видеть в поиске!
+    title: 'Айгам Барбершоп в Пятигорске',
+    description: 'Премиальный мужской барбершоп AYGAM.',
+    url: 'https://ayham-barbershop.vercel.app/',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -66,7 +66,7 @@ export default function YandexMap() {
                 map.addChild(customMarker);
               
             } catch (err) {
-                console.log(new Error(err))
+                console.log(err, 'ошибка карты ')
             }
         }
 
