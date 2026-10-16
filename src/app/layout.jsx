@@ -23,7 +23,8 @@ export const metadata = {
   description: "Премиальный мужской барбершоп АЙГАМ в Пятигорске. Профессиональные стрижки, оформление бороды, бритье опасной бритвой. Запишитесь онлайн у Нас на сайте",
   keywords: ['барбершоп пятигорск', 'мужская стрижка пятигорск', 'бритье бороды пятигорск', 'aygam barbershop pyatigorsk', 'записаться к барберу пятигорск', 'айгам барбершоп пятигорск'],
   verification: {
-    google: 'odSRNUu858bpRY25kENctCFEbSlFp_RLX_oGvYDc-7A'
+    google: 'odSRNUu858bpRY25kENctCFEbSlFp_RLX_oGvYDc-7A',
+       yandex: '84c050c2c296dbd3'
   },
   openGraph: {
     siteName: 'Айгам Барбершоп', // <-- Сюда пиши точное имя, которое хочешь видеть в поиске!
@@ -32,6 +33,7 @@ export const metadata = {
     url: 'https://ayham-barbershop.vercel.app/',
     type: 'website',
   },
+
 };
 
 export default function RootLayout({ children }) {
